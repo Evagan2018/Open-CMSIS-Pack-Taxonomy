@@ -56,38 +56,30 @@ Open-CMSIS-Pack-Taxonomy:
 
     # Source pdsc: MindMotion.MM32F103xCxE_DFP.pdsc, lines 205-212
     - Cclass: Board
-      Mode: Board
-      Description: "LED sample for MindMotion  board"
+      Mode: Device
+      Description: "Board specific components"
+      Contact: unknown
       Owner: MindMotion
-      Contact: "sales＠mindmotion.com.cn"
-
-      CGroups:
-        - CGroup: Samples
-          Mode: Controlled
-          Description: "Device startup code"
 
     # Source pdsc: ARM.CMSIS.pdsc, lines 458-464
     - Cclass: CMSIS
       Mode: API
       Description: "Defines the CMSIS Base and CMSIS Extended Software Components."      
       Owner: ARM
-      Contact: "cmsis@arm.com"    
-
+      Contact: "cmsis@arm.com"
       CGroups:
         - CGroup: RTOS2
           Mode: Controlled        
           Description: "CMSIS-RTOS API for Cortex-M, SC000, and SC300"
 
-
-    # Source pdsc: AnalogDevices.EV-COG-AD3029LZ_BSP.pdsc, lines 65 -76
     - Cclass: Board Support
-      Mode: Bundle
-      Description: "Analog Devices EV-COG-AD3029LZ Evaluation Board"
-      Owner: AnalogDevices
-      Contact: http://www.analog.com/en/support/technical-support.html
+      Mode: Board
+      Description: "Board support components, used with Bundle (todo)"
+      Owner: ARM
+      Contact: "cmsis@arm.com"
 
-      CGroups:
-        - CGroup: ADP5300
-          Mode: Open
-          Description: "ADP5300 Voltage Regulator Off-Chip Driver"
-      
+    # Source pdsc: Oryx-Embedded.Middleware.pdsc Line: 2288
+    - Cclass: CycloneTCP
+      Mode: Bundle
+      Description: Dual IPv4/IPv6 Stack
+      Owner: Oryx-Embedded
