@@ -54,3 +54,14 @@ Open-CMSIS-Pack-Taxonomy:
       Web: https://docs.aws.amazon.com/freertos/latest/userguide/c-sdk.html
       Owner: AWS
 
+    - Cclass: Board
+      Mode: Board
+      Description: "LED sample for MindMotion  board"
+      Owner: MindMotion
+      Contact: "sales＠mindmotion.com.cn"
+
+      CGroups:
+        - CGroup: Samples
+          Mode: Controlled
+          Description: "Device startup code"
+
